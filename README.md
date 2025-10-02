@@ -1,16 +1,111 @@
-# React + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 React Crypto Dashboard
 
-Currently, two official plugins are available:
+A responsive cryptocurrency dashboard built with **React**, **TailwindCSS**, and **React Router**, featuring real-time market data from the **CoinGecko API**, watchlist management with **Context + LocalStorage**, and interactive coin detail pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✅ Live market data from [CoinGecko API](https://www.coingecko.com/)
+✅ Responsive design (mobile, tablet, desktop) with **TailwindCSS**
+✅ Coin detail pages with price charts
+✅ Watchlist support (saved in LocalStorage)
+✅ Global state management with **React Context**
+✅ Loading states & error handling
+✅ Easy-to-extend modular structure
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```bash
+crypto-dashboard/
+ ┣ src/
+ ┃ ┣ components/       # Reusable UI components
+ ┃ ┃ ┣ Navbar.jsx
+ ┃ ┃ ┣ Footer.jsx
+ ┃ ┃ ┣ CoinCard.jsx
+ ┃ ┃ ┣ Loader.jsx
+ ┃ ┃ ┗ Chart.jsx
+ ┃ ┣ pages/            # Application pages
+ ┃ ┃ ┣ Home.jsx
+ ┃ ┃ ┣ CoinDetail.jsx
+ ┃ ┃ ┣ Watchlist.jsx
+ ┃ ┃ ┗ About.jsx
+ ┃ ┣ context/          # Context API
+ ┃ ┃ ┗ WatchlistContext.jsx
+ ┃ ┣ hooks/            # Custom hooks
+ ┃ ┃ ┣ useFetch.js
+ ┃ ┃ ┗ useLocalStorage.js
+ ┃ ┣ utils/            # Helper functions
+ ┃ ┃ ┗ formatters.js
+ ┃ ┣ App.jsx           # Router setup
+ ┃ ┣ main.jsx          # Entry point
+ ┃ ┗ index.css         # Tailwind base styles
+ ┣ tailwind.config.js
+ ┣ package.json
+ ┣ README.md
+```
+
+---
+
+## ⚙️ Installation
+
+1. **Clone the repo**
+
+   ```bash
+   git clone https://github.com/your-username/react-crypto-dashboard.git
+   cd react-crypto-dashboard
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser at **[http://localhost:5173](http://localhost:5173)** 🎉
+
+---
+
+## 🌐 API Reference
+
+This project uses the [CoinGecko API](https://www.coingecko.com/en/api).
+
+* **Markets Data**:
+
+  ```
+  GET /coins/markets?vs_currency=usd&per_page=20
+  ```
+* **Coin Detail**:
+
+  ```
+  GET /coins/{id}
+  ```
+* **Coin Chart (7 days)**:
+
+  ```
+  GET /coins/{id}/market_chart?vs_currency=usd&days=7
+  ```
+
+---
+
+---
+
+## 🛠️ Tech Stack
+
+* **React 18**
+* **TailwindCSS**
+* **React Router**
+* **Axios** (for API calls)
+* **Context API + LocalStorage** (for watchlist)
+
+
