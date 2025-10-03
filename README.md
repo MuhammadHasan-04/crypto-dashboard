@@ -1,9 +1,7 @@
 ---
-
 # 🚀 React Crypto Dashboard
 
 A responsive cryptocurrency dashboard built with **React**, **TailwindCSS**, and **React Router**, featuring real-time market data from the **CoinGecko API**, watchlist management with **Context + LocalStorage**, and interactive coin detail pages.
-
 ---
 
 ## 📌 Features
@@ -80,17 +78,19 @@ crypto-dashboard/
 
 This project uses the [CoinGecko API](https://www.coingecko.com/en/api).
 
-* **Markets Data**:
+- **Markets Data**:
 
   ```
   GET /coins/markets?vs_currency=usd&per_page=20
   ```
-* **Coin Detail**:
+
+- **Coin Detail**:
 
   ```
   GET /coins/{id}
   ```
-* **Coin Chart (7 days)**:
+
+- **Coin Chart (7 days)**:
 
   ```
   GET /coins/{id}/market_chart?vs_currency=usd&days=7
@@ -102,10 +102,8 @@ This project uses the [CoinGecko API](https://www.coingecko.com/en/api).
 
 ## 🛠️ Tech Stack
 
-* **React 18**
-* **TailwindCSS**
-* **React Router**
-* **Axios** (for API calls)
-* **Context API + LocalStorage** (for watchlist)
-
-
+- **React 18**
+- **TailwindCSS**
+- **React Router**
+- **Axios** (for API calls)
+- **Context API + LocalStorage** (for watchlist)
