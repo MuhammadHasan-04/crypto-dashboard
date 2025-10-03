@@ -1,3 +1,8 @@
+
+
+//made for the personal testing of the card design
+
+
 import CoinCard from "../components/CoinCard";
 import React from "react";
 
