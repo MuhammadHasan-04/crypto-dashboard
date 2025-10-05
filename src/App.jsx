@@ -9,10 +9,10 @@ import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen max-w-10xl font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
+    <div className="flex flex-col min-h-screen max-w-10xl transition-colors duration-500 bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white">
       <Navbar />
 
-      <main className="flex-1 px-4 sm:px-6 lg:px-8 mt-24">
+      <main className="flex-1 px-4 sm:px-6 lg:px-8 mt-24 transition-colors duration-500">
         <div className="max-w-10xl mx-auto">
           <Routes>
             <Route path="/" element={<Home />} />
