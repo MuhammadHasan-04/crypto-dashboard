@@ -17,7 +17,6 @@ export default function Navbar() {
     >
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="max-w-10xl mx-auto flex items-center justify-between py-4">
-          {/* Logo */}
           <div>
             <Link
               to="/"
@@ -27,7 +26,6 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden sm:flex flex-1 justify-center">
             <div className="flex space-x-4 rounded-full px-4 py-2 shadow-lg bg-white dark:bg-gray-800 transition-colors duration-500">
               <Link
